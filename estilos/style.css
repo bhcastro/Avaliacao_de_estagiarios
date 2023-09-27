@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sogdian&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
 
 
 :root {
@@ -9,8 +9,8 @@
     --cor-main: #ffffff;
     --cor-fundo-questoes: #eeecec;
     --cor-bordas: rgb(0 0 0 / 5%);
-    --fonte-header: 'Noto Sans Sogdian';
-    --fonte-texto: 'Ubuntu';
+    --fonte-header: 'Ubuntu';
+    --fonte-texto: 'Poppins', sans-serif;
     --caixas-preenchimento: rgb(215, 250, 215);
     --sombra-caixas: rgb(0 0 0 / 15%);
 }
@@ -48,12 +48,15 @@ textarea:focus {
 header {
     width: 100%;
     font-family: var(--fonte-header);
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
     background: linear-gradient(to top, var(--cor01), transparent);
     padding-bottom: 25px;
     text-shadow: 5px 5px 10px #0000004d;
-
+}
+header > h1 {
+    padding-top: 10px;
+    font-variant: small-caps;
 }
 
 /*NAV*/
@@ -93,7 +96,7 @@ main {
     font-family: var(--fonte-texto);
     font-weight: normal;
     text-align: center;
-    width: 70%;
+    width: 80%;
     margin: 0% auto 5% auto;
     background-color: var(--cor-main);
     box-shadow: 5px 5px 10px var(--sombra-caixas);
@@ -115,7 +118,7 @@ main div {
 /*QUESTÃO 01*/
 #questao1 {
     display: inline-block;
-    max-width: 950px;
+    max-width: 975px;
     width: auto;
 }
 #questao1 ol {
@@ -146,7 +149,7 @@ main div {
 
 /*QUESTÃO 02*/
 #questao2 {
-    max-width: 83%;
+    max-width: 73%;
     margin-top: 0px;
 }
 #questao2 ol {
@@ -169,7 +172,7 @@ main div {
 /*QUESTÃO 03*/
 #questao03 {
     box-sizing: border-box;
-    width: 87%;
+    width: 76%;
     margin: 0% auto 5% auto;
     padding-bottom: 5%;
 }
@@ -182,6 +185,7 @@ table {
     height: 10%;
     margin: 5% auto 0.5% auto;
 }
+
 #cabecalho {
     background-color: white;
 }
@@ -277,6 +281,13 @@ footer a:hover {
     * {
         padding: 0px;
         margin: 0px;
+    }
+
+    /*HEADER*/
+    header > h1 {
+        font-size: 11vw;
+        padding-top: 10px;
+        font-variant: small-caps;
     }
 
     /*NAV*/
